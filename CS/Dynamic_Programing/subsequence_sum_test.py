@@ -1,5 +1,5 @@
 import unittest
-from CS.Dynamic_Programing.code import subSequenceSum
+from CS.Dynamic_Programing.subsequence_sum import subSequenceSum
 
 class TestSubSequenceSum(unittest.TestCase):
     def test_example_case(self):
