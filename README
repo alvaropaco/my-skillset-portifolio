@@ -1,7 +1,3 @@
-Certainly! Below is a fun and light-hearted Markdown document for your "My Skillset Portfolio" repo:
-
----
-
 # 🚀 Welcome to "My Skillset Portfolio"! 🚀
 
 Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to figure out how amazing I am. 😉 Welcome to the treasure trove of my coding prowess. You've just stumbled upon the digital equivalent of Aladdin's Cave!
