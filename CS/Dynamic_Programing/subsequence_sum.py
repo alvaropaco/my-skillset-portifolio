@@ -1,6 +1,6 @@
 # Find the smallest subsequence of a list
 # where the sum is equal to a defined integer
-def subSequenceSum(lst, sumNumber):
+def sub_sequence_sum(lst, sumNumber):
     result = []
     endIndex = len(lst)
     while endIndex > 0:
@@ -15,4 +15,4 @@ def subSequenceSum(lst, sumNumber):
     return result
 
 
-print(subSequenceSum([4, 3, 20, 5, 9, 6, 2, 8], 34))
+# print(sub_sequence_sum([4, 3, 20, 5, 9, 6, 2, 8], 34))
