@@ -1,0 +1,14 @@
+{
+  "name": "video-streaming-backend",
+  "version": "1.0.0",
+  "description": "Backend for video streaming using Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

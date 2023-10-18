@@ -1,0 +1,5 @@
+node_modules/
+.pytest_cache/
+build/
+dist/
+.vscode/
