@@ -1,0 +1,27 @@
+{
+  "name": "awesomemessages",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@config-plugins/react-native-webrtc": "^7.0.0",
+    "@react-native-community/clipboard": "^1.5.1",
+    "expo": "~49.0.13",
+    "expo-splash-screen": "~0.20.5",
+    "expo-status-bar": "~1.6.0",
+    "react": "18.2.0",
+    "react-native": "0.72.5",
+    "react-native-peerjs": "^1.0.4",
+    "react-native-webrtc": "^111.0.6",
+    "simple-peer": "^9.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
