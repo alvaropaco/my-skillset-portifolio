@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "turbo": "^1.10.16"
+    "@nestjs/typeorm": "^10.0.0",
+    "pg": "^8.11.3",
+    "turbo": "^1.10.16",
+    "typeorm": "^0.3.17"
   }
 }
