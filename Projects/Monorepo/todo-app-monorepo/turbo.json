@@ -1,0 +1,16 @@
+{
+    "baseBranch": "main",
+    "pipeline": {
+      "backend": {
+        "dependsOn": [],
+        "commands": ["cd backend && npm install", "cd backend && npm test"],
+        "outputs": ["backend/dist/**"]
+      },
+      "frontend": {
+        "dependsOn": [],
+        "commands": ["cd frontend && npm install", "cd frontend && npm test"],
+        "outputs": ["frontend/build/**"]
+      }
+    }
+  }
+  

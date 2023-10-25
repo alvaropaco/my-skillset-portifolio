@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "turbo": "^1.10.16"
+  },
+  "devDependencies": {
+    "@turbo/core": "^0.2.3"
   }
 }
