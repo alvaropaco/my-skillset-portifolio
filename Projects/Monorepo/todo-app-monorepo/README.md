@@ -59,6 +59,27 @@ run all the packages at once with
 
 `npm run start`
 
+## QA & Compatibilities
+
+Quality and performance tests was done in the following devices:
+
+| Platform/Device         | Version                                 | Tested           |
+|-------------------------|-----------------------------------------|------------------|
+| Chrome Browser          | Version 116.0.5845.110 (Official Build) (arm64) | ✅             |
+| Android Device          | Version 13                              | ✅             |
+| Android Emulator        | Genymotion Google Pixel 3               | ✅             |
+| iOS                     | -                                       | ❌             |
+
+The "✅" mark indicates that the TODO app software was tested on that platform or device. The "❌" mark indicates it was not tested on iOS.
+
+## Demo
+
+### Web version
+[screen-capture (1).webm](https://github.com/alvaropaco/my-skillset-portifolio/assets/3423410/92cc78c2-760b-4930-acc6-e9c0ce8b6a73)
+
+### Mobile version
+[screen-capture-Android.mp4](https://github.com/alvaropaco/my-skillset-portifolio/assets/3423410/5c11ab38-fb75-43fb-871e-4eccd604d05c)
+
 ## What's next?
 
 What should be implemented next in this project in order to accomplish the chanllenge?
