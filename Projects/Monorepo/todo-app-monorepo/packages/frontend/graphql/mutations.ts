@@ -11,8 +11,8 @@ export const MUTATIONS = {
     }
   `,
   updateTodo: gql`
-    mutation UpdateTodo($id: Int!, $title: String!, $isCompleted: Boolean!) {
-      updateTodo(input: { id: $id, title: $title, isCompleted: $isCompleted }) {
+    mutation UpdateTodo($id: String!, $isCompleted: Boolean!) {
+      updateTodo(id: $id, isCompleted: $isCompleted) {
         id
         title
         isCompleted
@@ -21,10 +21,8 @@ export const MUTATIONS = {
   `,
   
   deleteTodo: gql`
-    mutation DeleteTodo($id: Int!) {
-      deleteTodo(id: $id) {
-        id
-      }
+    mutation DeleteTodo($id: String!) {
+      deleteTodo(id: $id)
     }
   `,
 };

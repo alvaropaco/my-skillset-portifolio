@@ -9,6 +9,7 @@
     "color-name": "^1.1.4",
     "commander": "^2.11.0",
     "devtools-protocol": "^0.0.724935",
+    "expo-constants": "^14.4.2",
     "graphql": "^16.8.1",
     "has-flag": "^4.0.0",
     "redux": "^4.2.1",

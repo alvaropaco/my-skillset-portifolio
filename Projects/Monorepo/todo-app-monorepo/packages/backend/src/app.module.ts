@@ -14,9 +14,8 @@ require('dotenv').config();
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
       autoSchemaFile: join(process.cwd(), '../shared/graphql-schema/schema.graphql'),
-      sortSchema: true,
       driver: ApolloDriver,
-      typePaths: ['./**/*.graphql'],
+      typePaths: ['./src/todo/*.graphql'],
       playground: true,
     }),
     TypeOrmModule.forRoot({

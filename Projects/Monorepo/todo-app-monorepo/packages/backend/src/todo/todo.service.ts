@@ -3,6 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Todo } from './todo.entity';
 
+
 @Injectable()
 export class TodoService {
   constructor(
@@ -14,7 +15,7 @@ export class TodoService {
     return this.todoRepository.find();
   }
 
-  findOne(id: number): Promise<Todo> {
+  findOne(id: string): Promise<Todo> {
     return this.todoRepository.findOne({ where: { id } });
   }
 
@@ -24,17 +25,16 @@ export class TodoService {
     return this.todoRepository.save(todo);
   }
 
-  async update(id: number, title: string, isCompleted: boolean): Promise<Todo> {
+  async update(id: string, isCompleted: boolean): Promise<Todo> {
     const todo = await this.todoRepository.findOne({ where: { id } });
     if (!todo) {
         throw new NotFoundException(`Todo with ID ${id} not found`);
     }
-    todo.title = title;
     todo.isCompleted = isCompleted;
     return this.todoRepository.save(todo);
   }
 
-  remove(id: number): Promise<void> {
+  remove(id: string): Promise<void> {
     return this.todoRepository.delete(id).then(() => null);
   }
 }

@@ -1,12 +1,17 @@
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import React, { useContext, createContext } from 'react';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import Constants from 'expo-constants';
+import getEnvVars from '../environment';
+
+const ENV = getEnvVars(Constants.expoConfig?.hostUri);
+console.log(ENV.API_URL)
 
 // Create a context for the Apollo client
 const ApolloContext = createContext<ApolloClient<any> | undefined>(undefined);
 
 // Initialize Apollo Client
 const client = new ApolloClient({
-  uri: 'http://localhost:3000/graphql',
+  uri: `${ENV.API_URL}/graphql`,
   cache: new InMemoryCache(),
 });
 

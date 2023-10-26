@@ -11,7 +11,7 @@ import {
   export class Todo extends BaseEntity {
     @Field(() => ID)
     @PrimaryGeneratedColumn()
-    id: number;
+    id: typeof ID;
   
     @Field()
     @Column()

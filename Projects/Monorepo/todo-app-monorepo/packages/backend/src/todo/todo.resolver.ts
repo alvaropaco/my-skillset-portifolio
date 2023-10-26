@@ -12,7 +12,7 @@ export class TodoResolver {
   }
 
   @Query(() => Todo)
-  async todo(@Args('id') id: number): Promise<Todo> {
+  async todo(@Args('id') id: string): Promise<Todo> {
     return this.todoService.findOne(id);
   }
 
@@ -23,15 +23,14 @@ export class TodoResolver {
 
   @Mutation(() => Todo)
   async updateTodo(
-    @Args('id') id: number,
-    @Args('title') title: string,
+    @Args('id') id: string,
     @Args('isCompleted') isCompleted: boolean,
   ): Promise<Todo> {
-    return this.todoService.update(id, title, isCompleted);
+    return this.todoService.update(id, isCompleted);
   }
 
   @Mutation(() => Boolean)
-  async deleteTodo(@Args('id') id: number): Promise<boolean> {
+  async deleteTodo(@Args('id') id: string): Promise<boolean> {
     await this.todoService.remove(id);
     return true;
   }

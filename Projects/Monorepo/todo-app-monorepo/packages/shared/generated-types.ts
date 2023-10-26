@@ -1,6 +1,6 @@
 import { GraphQLResolveInfo } from 'graphql';
-export type Maybe<T> = T | null;
-export type InputMaybe<T> = Maybe<T>;
+export type Maybe<T> = T extends PromiseLike<infer U> ? Promise<U | null> : T | null;
+export type InputMaybe<T> = T extends PromiseLike<infer U> ? Promise<U | null> : T | null;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
 export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
@@ -17,10 +17,10 @@ export type Scalars = {
 };
 
 export type Mutation = {
-  __typename?: 'Mutation';
-  createTodo: Todo;
-  deleteTodo: Scalars['Boolean']['output'];
-  updateTodo: Todo;
+  readonly __typename?: 'Mutation';
+  readonly createTodo: Todo;
+  readonly deleteTodo: Scalars['Boolean']['output'];
+  readonly updateTodo: Todo;
 };
 
 
@@ -30,32 +30,31 @@ export type MutationCreateTodoArgs = {
 
 
 export type MutationDeleteTodoArgs = {
-  id: Scalars['Float']['input'];
+  id: Scalars['String']['input'];
 };
 
 
 export type MutationUpdateTodoArgs = {
-  id: Scalars['Float']['input'];
+  id: Scalars['String']['input'];
   isCompleted: Scalars['Boolean']['input'];
-  title: Scalars['String']['input'];
 };
 
 export type Query = {
-  __typename?: 'Query';
-  todo: Todo;
-  todos: Array<Todo>;
+  readonly __typename?: 'Query';
+  readonly todo: Todo;
+  readonly todos: ReadonlyArray<Todo>;
 };
 
 
 export type QueryTodoArgs = {
-  id: Scalars['Float']['input'];
+  id: Scalars['String']['input'];
 };
 
 export type Todo = {
-  __typename?: 'Todo';
-  id: Scalars['ID']['output'];
-  isCompleted: Scalars['Boolean']['output'];
-  title: Scalars['String']['output'];
+  readonly __typename?: 'Todo';
+  readonly id: Scalars['ID']['output'];
+  readonly isCompleted: Scalars['Boolean']['output'];
+  readonly title: Scalars['String']['output'];
 };
 
 
@@ -130,7 +129,6 @@ export type DirectiveResolverFn<TResult = {}, TParent = {}, TContext = {}, TArgs
 /** Mapping between all available schema types and the resolvers types */
 export type ResolversTypes = {
   Boolean: ResolverTypeWrapper<Scalars['Boolean']['output']>;
-  Float: ResolverTypeWrapper<Scalars['Float']['output']>;
   ID: ResolverTypeWrapper<Scalars['ID']['output']>;
   Mutation: ResolverTypeWrapper<{}>;
   Query: ResolverTypeWrapper<{}>;
@@ -141,7 +139,6 @@ export type ResolversTypes = {
 /** Mapping between all available schema types and the resolvers parents */
 export type ResolversParentTypes = {
   Boolean: Scalars['Boolean']['output'];
-  Float: Scalars['Float']['output'];
   ID: Scalars['ID']['output'];
   Mutation: {};
   Query: {};
@@ -152,12 +149,12 @@ export type ResolversParentTypes = {
 export type MutationResolvers<ContextType = any, ParentType extends ResolversParentTypes['Mutation'] = ResolversParentTypes['Mutation']> = {
   createTodo?: Resolver<ResolversTypes['Todo'], ParentType, ContextType, RequireFields<MutationCreateTodoArgs, 'title'>>;
   deleteTodo?: Resolver<ResolversTypes['Boolean'], ParentType, ContextType, RequireFields<MutationDeleteTodoArgs, 'id'>>;
-  updateTodo?: Resolver<ResolversTypes['Todo'], ParentType, ContextType, RequireFields<MutationUpdateTodoArgs, 'id' | 'isCompleted' | 'title'>>;
+  updateTodo?: Resolver<ResolversTypes['Todo'], ParentType, ContextType, RequireFields<MutationUpdateTodoArgs, 'id' | 'isCompleted'>>;
 };
 
 export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   todo?: Resolver<ResolversTypes['Todo'], ParentType, ContextType, RequireFields<QueryTodoArgs, 'id'>>;
-  todos?: Resolver<Array<ResolversTypes['Todo']>, ParentType, ContextType>;
+  todos?: Resolver<ReadonlyArray<ResolversTypes['Todo']>, ParentType, ContextType>;
 };
 
 export type TodoResolvers<ContextType = any, ParentType extends ResolversParentTypes['Todo'] = ResolversParentTypes['Todo']> = {

@@ -1,7 +1,15 @@
 overwrite: true
-schema: "http://localhost:3000/graphql"
+schema: "../shared/graphql-schema/schema.graphql"
 generates:
   ../shared/generated-types.ts:
+    config:
+      immutableTypes: true
+      maybeValue: 'T extends PromiseLike<infer U> ? Promise<U | null> : T | null'
+      avoidOptionals:
+        field: true
+        inputValue: true
+        object: true
+        defaultValue: true
     plugins:
       - "typescript"
       - "typescript-operations"

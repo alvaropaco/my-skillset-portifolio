@@ -15,6 +15,7 @@
     "@react-navigation/native-stack": "^6.9.16",
     "@todo-app-monorepo/shared": "^1.0.0",
     "expo": "~49.0.15",
+    "expo-constants": "^14.4.2",
     "expo-status-bar": "~1.6.0",
     "graphql": "^16.8.1",
     "luxon": "^3.4.3",

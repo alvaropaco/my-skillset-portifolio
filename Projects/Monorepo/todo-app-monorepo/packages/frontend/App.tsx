@@ -7,7 +7,7 @@ export default function App() {
   return (
     <ApolloClientProvider>
       <View style={styles.container}>
-        <Text>My ToDo App</Text>
+        <Text style={styles.apptTitle}>Alvaro's TODO list</Text>
         <TodoContainer />
         <StatusBar style="auto" />
       </View>
@@ -16,8 +16,16 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  apptTitle: {
+    marginBottom: 40,
+    marginTop: 40,
+    fontFamily: "Roboto",
+    fontSize: 32,
+    color: "gray"
+  },
   container: {
-    flex: 1,
+    display: "flex",
+    width: "100%",
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',

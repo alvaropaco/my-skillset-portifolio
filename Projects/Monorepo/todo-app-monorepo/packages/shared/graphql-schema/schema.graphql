@@ -2,19 +2,19 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type Mutation {
-  createTodo(title: String!): Todo!
-  deleteTodo(id: Float!): Boolean!
-  updateTodo(id: Float!, isCompleted: Boolean!, title: String!): Todo!
+type Todo {
+  id: ID!
+  title: String!
+  isCompleted: Boolean!
 }
 
 type Query {
-  todo(id: Float!): Todo!
   todos: [Todo!]!
+  todo(id: String!): Todo!
 }
 
-type Todo {
-  id: ID!
-  isCompleted: Boolean!
-  title: String!
+type Mutation {
+  createTodo(title: String!): Todo!
+  updateTodo(id: String!, isCompleted: Boolean!): Todo!
+  deleteTodo(id: String!): Boolean!
 }
