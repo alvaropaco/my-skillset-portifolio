@@ -1,6 +1,6 @@
 const ENV = {
     dev: {
-      API_URL: 'http://192.168.0.200:3000',
+      API_URL: 'http://192.168.0.200:3000', // You should change that with your machine IP ;)
     },
     staging: {
       API_URL: 'http://staging.host.com',
