@@ -1,8 +1,37 @@
 {
+  "name": "todo-app-monorepo",
+  "version": "1.0.0",
+  "description": "",
   "dependencies": {
-    "turbo": "^1.10.16"
+    "ansi-styles": "^4.3.0",
+    "chrome-remote-interface": "^0.28.2",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "commander": "^2.11.0",
+    "devtools-protocol": "^0.0.724935",
+    "graphql": "^16.8.1",
+    "has-flag": "^4.0.0",
+    "redux": "^4.2.1",
+    "redux-saga": "^1.2.3",
+    "regenerator-runtime": "^0.14.0",
+    "supports-color": "^7.2.0",
+    "turbo": "^1.10.16",
+    "turbo-darwin-arm64": "^1.10.16",
+    "typescript-compare": "^0.0.2",
+    "typescript-logic": "^0.0.0",
+    "typescript-tuple": "^2.2.1",
+    "ws": "^7.5.9"
   },
   "devDependencies": {
-    "@turbo/core": "^0.2.3"
-  }
+    "lerna": "^7.4.1"
+  },
+  "scripts": {
+    "start": "lerna run start --parallel",
+    "test": "lerna run test"
+  },
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "author": "",
+  "license": "ISC"
 }
