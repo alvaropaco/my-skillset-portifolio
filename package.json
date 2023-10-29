@@ -1,0 +1,14 @@
+{
+  "name": "my-skillset-portifolio",
+  "version": "1.0.0",
+  "description": "Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to figure out how amazing I am. 😉 Welcome to the treasure trove of my coding prowess. You've just stumbled upon the digital equivalent of Aladdin's Cave!",
+  "main": "index.js",
+  "scripts": {
+    "node:test": "mocha --recursive ./Online_Assements/Nodejs/**/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
