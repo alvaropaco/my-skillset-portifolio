@@ -3,13 +3,7 @@
 
 name: Testing Node.js Online Assessments
 
-on:
-  push:
-    paths:
-      - 'Online_Assements/Nodejs/**/**'
-  pull_request:
-    paths:
-      - 'Online_Assements/Nodejs/**/**'
+on: [push]
 
 jobs:
   build:
@@ -31,4 +25,3 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run node:test
-    
