@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "node:test": "mocha --recursive ./Online_Assements/Nodejs/**/*.test.js",
-    "tree": "tree -I 'node_modules|.expo' > directory_structure.txt"
+    "tree:write": "sed -i '' '22r directory_structure.md' README.md",
+    "tree": "tree -I 'node_modules|.expo' > directory_structure.md && npm run tree:write"
   },
   "author": "",
   "license": "ISC",

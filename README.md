@@ -19,7 +19,6 @@ Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to fig
 - **Comments Galore:** I believe in explaining my thought process. Dive deep into my comments; it's like taking a journey through my coder's mind.
 
 ### Repo structure in details:
-
 ```bash
 .
 ├── CS
@@ -34,7 +33,7 @@ Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to fig
 │   │   ├── angle_between_hands.py
 │   │   └── angle_between_hands_test.py
 │   └── __init__.py
-├── Online_Assements
+├── Online_Assessments
 │   └── Nodejs
 │       └── Qualified
 │           ├── Infinity_Forum_Thread_PostgreSQL_API
@@ -49,7 +48,7 @@ Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to fig
 │               ├── app.test.js
 │               ├── package-lock.json
 │               └── package.json
-├── Projects
+├── Projects_Assessments
 │   ├── Monorepo
 │   │   └── todo-app-monorepo
 │   │       ├── README.md
@@ -142,6 +141,13 @@ Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to fig
 │   │               ├── graphql-schema
 │   │               │   └── schema.graphql
 │   │               └── package.json
+│   ├── Python
+│   │   └── conways-game-of-life-python
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── game.py
+│   │       ├── main.py
+│   │       └── test_game.py
 │   └── Web
 │       ├── sample-razzle-app
 │       │   ├── README.md
@@ -191,12 +197,12 @@ Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to fig
 │                       └── setupTests.js
 ├── README.md
 ├── __init__.py
-├── directory_structure.txt
+├── directory_structure.md
 ├── environment.yml
 ├── package-lock.json
 └── package.json
 
-37 directories, 137 files
+39 directories, 142 files
 
 ```
 

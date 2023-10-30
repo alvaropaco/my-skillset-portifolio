@@ -11,7 +11,7 @@
 │   │   ├── angle_between_hands.py
 │   │   └── angle_between_hands_test.py
 │   └── __init__.py
-├── Online_Assements
+├── Online_Assessments
 │   └── Nodejs
 │       └── Qualified
 │           ├── Infinity_Forum_Thread_PostgreSQL_API
@@ -26,7 +26,7 @@
 │               ├── app.test.js
 │               ├── package-lock.json
 │               └── package.json
-├── Projects
+├── Projects_Assessments
 │   ├── Monorepo
 │   │   └── todo-app-monorepo
 │   │       ├── README.md
@@ -119,6 +119,13 @@
 │   │               ├── graphql-schema
 │   │               │   └── schema.graphql
 │   │               └── package.json
+│   ├── Python
+│   │   └── conways-game-of-life-python
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── game.py
+│   │       ├── main.py
+│   │       └── test_game.py
 │   └── Web
 │       ├── sample-razzle-app
 │       │   ├── README.md
@@ -168,9 +175,9 @@
 │                       └── setupTests.js
 ├── README.md
 ├── __init__.py
-├── directory_structure.txt
+├── directory_structure.md
 ├── environment.yml
 ├── package-lock.json
 └── package.json
 
-37 directories, 137 files
+39 directories, 142 files
