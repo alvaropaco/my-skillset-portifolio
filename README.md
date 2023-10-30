@@ -20,9 +20,8 @@ Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to fig
 
 ### Repo structure in details:
 
-<details>
-  <summary>Click to expand!</summary>
 ```bash
+.
 ├── CS
 │   ├── Dynamic_Programing
 │   │   ├── __init__.py
@@ -192,10 +191,8 @@ Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to fig
 └── package.json
 
 36 directories, 132 files
+
 ```
-
-</details>
-
 
 ## Why Should You Use This to Evaluate Me? 🕵️‍♂️
 
