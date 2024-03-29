@@ -177,41 +177,31 @@ class CodeWriter implements ICodeWriter {
 const writer = new CodeWriter();
 
 writer.writeCode(`
-import { GET_ACCOUNT_FUNC_ENDPOINT, IAccount } from '@mobile-platform/common';
-import { useQuery } from 'react-query';
-import { useIdToken } from './useIdToken';
-import useRemoteConfig from './useRemoteConfig';
+// This is a single-line comment
 
-function useGetAccountById(id: string | null) {
-  const { configValues } = useRemoteConfig(['get_account_func_endpoint'], {
-    get_account_func_endpoint: GET_ACCOUNT_FUNC_ENDPOINT,
-  });
-  const { idToken, getIdTokenAsync } = useIdToken();
+/* This is a block comment
+   that spans multiple lines */
 
-  const fetchAccountInfo = async () => {
-    if (!id) {
-      console.warn('fetchAccountInfo: id is required');
-      return null;
-    }
-
-    const token = idToken ?? (await getIdTokenAsync()); // we need to get this token from firebase User.getIdToken() insteadm firebase/auth
-
-    if (!token) throw new Error('token is required');
-    if (!response.ok) {
-      throw new Error('Token validation failed');
-    }
-    return response.json();
-  };
-
-  return useQuery<IAccount, Error>(['accountInfo', id], fetchAccountInfo, {
-    enabled: Boolean(id),
-    staleTime: 0, // 5 minutes
-    cacheTime: 0, // 1 hour
-  });
+// Define a function to add two numbers
+function add(a: number, b: number): number {
+    return a + b; // Return the sum of a and b
 }
 
-export default useGetAccountById;
+/* Another block comment
+   with more details about the subtract function */
+// Subtract function
+function subtract(a: number, b: number): number {
+    // Subtract b from a and return
+    return a - b;
+}
 
+// Testing the functions
+console.log(add(5, 3)); // Should print 8
+console.log(subtract(10, 4)); // Should print 6
+
+/*
+End of the commented code example
+*/
 `);
 
 console.log(writer.getOutput());
