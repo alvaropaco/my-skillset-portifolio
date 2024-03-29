@@ -1,5 +1,4 @@
-# 🚀 Welcome to "My Skillset Portfolio"! 🚀 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=alvaropaco_my-skillset-portifolio&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=alvaropaco_my-skillset-portifolio)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=alvaropaco_my-skillset-portifolio&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=alvaropaco_my-skillset-portifolio)
+# 🚀 Welcome to "My Skillset Portfolio"! 🚀 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=alvaropaco_my-skillset-portifolio&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=alvaropaco_my-skillset-portifolio)[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=alvaropaco_my-skillset-portifolio&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=alvaropaco_my-skillset-portifolio)
 
 
 Hello there, esteemed recruiter, interviewer, or sneaky competitor trying to figure out how amazing I am. 😉 Welcome to the treasure trove of my coding prowess. You've just stumbled upon the digital equivalent of Aladdin's Cave!
